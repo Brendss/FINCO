@@ -164,14 +164,26 @@ window.controlador = {
 
     buttonSignInPhone.addEventListener("click",()=>{
       // firebase.auth().languageCode = 'it';
-      const appVerifier = new firebase.auth.RecaptchaVerifier('captcha', {
-        'size': 'invisible'
+      window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('captcha', {
+        'size': 'invisible',
+        'callback': function(response) {
+          // reCAPTCHA solved, allow signInWithPhoneNumber.
+          onSignInSubmit();
+        }
       });
-  appVerifier.render().then(function(widgetId){
-     window.appVerifier = widgetId;
-  });
+  //     const appVerifier = new firebase.auth.RecaptchaVerifier('captcha', {
+  //       'size': 'invisible',
+  //       'callback': function(response) {
+  //         // reCAPTCHA solved, allow signInWithPhoneNumber.
+  //         onSignInSubmit();
+  //       }
+  //     });
+  // window.recaptchaVerifier.render().then(function(widgetId){
+  //    window.appVerifier = widgetId;
+  // });
       const phoneNumber = document.getElementById("input-sing-in-phone").value;
       console.log(phoneNumber)
+      var appVerifier = window.recaptchaVerifier;
       firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
         .then(function (confirmationResult) {
           alert("hey estas usando sm")
@@ -182,11 +194,13 @@ window.controlador = {
           grecaptcha.reset(window.recaptchaWidgetId);
 
           // Or, if you haven't stored the widget ID:
-          window.recaptchaVerifier.render().then(function(widgetId) {
-            grecaptcha.reset(widgetId);
+          // window.recaptchaVerifier.render().then(function(widgetId) {
+          //   grecaptcha.reset(widgetId);
           })
-        })
+       
     });
+
+    
 
     
  
