@@ -1,26 +1,26 @@
 html,
 body {
+   margin: 0px;
    background-color: white;
-   /* color: white; */
-   /* height: 100%; */
-   font-family: 'Lato', sans-serif;
+   margin-top: -1em;
+}
+.inicio-vista{
+   background-image: url(../assets/img/ahorros.jpeg);
+   background-size: cover;
+   background-repeat: no-repeat;
 
 }
-
-#coverphoto {
-   width: 80%;
-   opacity: 0.8;
-   border-radius: 1%;
-
+.color-morado-fuerte{
+    color: #6C5291;
+}
+.font-size-cinco{
+   font-size: 5vw;
+}
+.color-white{
+   color:white;
 }
 
-.login {
-   width: 100%;
-   padding-left: 6%;
-   padding-right: 6%;
-   padding-top: 0%;
-   color: white;
-}
+
 
 input::placeholder {
    color: gray;
@@ -40,7 +40,7 @@ input::placeholder {
    padding: 35px;
    position: static;
    color: #7fff00;
-   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-family: 'Montserrat', sans-serif;
    text-align: center;
 }
 
@@ -49,9 +49,15 @@ h1 {
    font-size: 50px;
    padding: 15px;
    position: static;
-   color:  #2ab4dc;
-   font-family: 'ZCOOL QingKe HuangYou', cursive;
+   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
+   font-weight: 900;
    text-align: center;
+   padding-top: 40%;
+}
+h3{
+   text-align: center;
+   font-family: montserrat;
+   font-size: 7vw;
 }
 
 
@@ -73,16 +79,6 @@ h1 {
    font-size: 15px;
 }
 
-#areaPost {
-   width: 250px;
-   height: 100px;
-   color: white;
-   text-align: left;
-   background-color: black;
-   position: relative;
-   left: 26px;
-   padding: 5px;
-}
 
 .nav-link {
    color: white;
@@ -96,65 +92,6 @@ a.nav-item {
    color: white;
 }
 
-
-
-.comments {
-   height: auto;
-   justify-content: center;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row-reverse;
-   background-color: #2e2e2e;
-
-}
-
-.textarea {
-   height: 90px;
-   width: 89%;
-   border-radius: 10px;
-   padding-left: 3%;
-   resize: none;
-   margin-bottom: 14px;
-
-}
-
-.comment {
-   width: 290px;
-   height: 125px;
-   color: white;
-   text-align: left;
-   background-color: #2e2e2e;
-}
-
-
-h4 {
-   color: white;
-   font-family: 'ZCOOL QingKe HuangYou', cursive;
-   text-align: center;
-}
-
-.color-green {
-   color: #7fff00;
-}
-
-.input-type {
-   border-top: none;
-   border-left: none;
-   border-right: none;
-   color: black;
-   width: 100%;
-   background-color: white;
-   border-color: #6b6b6b;
-
-}
-
-#password-reg {
-   padding-top: 2em;
-}
-
-input:focus {
-   outline: none;
-}
 
 .button-reg {
    background-color: #2e2e2e;
@@ -177,36 +114,7 @@ input:focus {
    border: none;
 }
 
-.color-login {
-   background-color: #2ab4dc;
-   margin-top: 1em;
-   border-radius: 10px;
-   width: 90%;
-   text-align: center;
-   margin-left: 5%;
-  
-}
 
-.color-twitter {
-   background-color: #8492a6;
-   margin-top: 1.5em;
-
-}
-
-.color-facebook {
-   background-color: #3c4858;
-   margin-top: .5em;
-
-}
-
-.color-google {
-   background-color: #c0ccda;
-   margin-top: 1.5em;
-}
-
-button img {
-   left: 60px;
-}
 
 header {
    
@@ -225,34 +133,24 @@ background-color: white;
 }
 
 #titulo {
-   color: chartreuse;
+   color: #90509c;
 }
 
 p {
    padding-top: 1em;
-   /* text-align: center;
-} */}
-
-footer {
-   
-   width: 100%;
-   text-align: center;
-   padding: 10px;
-   color: grey;
-   /* margin-top: 0em; */
-   position: sticky;
-   top: 3em;
-   background-color: whitesmoke;
 }
-
-.modal-background {
-   background-color: #2e2e2e;
-   margin-top: 6em;
-
+.input-type{
+border-top: none;
+border-left: none;
+border-right: none;
+color: black;
+width: 100%;
+background-color: white;
+border-color: #6b6b6b;
 }
 
 .margin-input {
-   margin-bottom: 2em;
+   margin-bottom: 4em;
 
 }
 
@@ -353,13 +251,6 @@ footer {
 
 
 
-body#tinymce {
-   background: #FFFFFF;
-
-   border-radius: 10px;
-   margin-bottom: 3em;
-   text-align: center;
-}
 
 .avatar-img {
    /* display: inline; */
@@ -460,44 +351,47 @@ body#tinymce {
    font-size: .9em;
    float: left;
 }
-.color-blue{
-   background-color:#035472;
-}
+
 .imagen-fondo{
    background-image: url(https://image.flaticon.com/icons/svg/53/53567.svg);
 
 }
 
 .register-div {
-   margin-top: 0em;
-   /* margin-left: 3%;
-   margin-right: 3%; */
-
+   margin-top: 6em;
 }
 
 .margin-title {
-   margin-left: 5%;
+   font-family: roboto;
+   margin-bottom: 2em;
+   text-align: center;
+   font-size:7vw;
 }
 
-.color-back-green {
-   background-color: chartreuse;
+.button-crear-cuenta{
+   height: 3em;
+   width: 50%;
+   border-radius: 10px;
+   background-color: white;
+   border-color: purple;
+   border-style: solid;
+   color: purple;
+   margin-left: 23%;
 }
-
-.color-white {
+.condiciones{
+   color: gray;
+   margin-left:7%;
+   margin-top: 2em;
+}
+.background-white {
    background-color: white;
 }
 
 .border-color-green {
-   border-top-color: chartreuse
+   border-top-color: #90509c;
 }
 
-.margin-ref {
-   margin-left: 75%;
-}
 
-.font-slogan {
-   font-size: 5vw;
-}
 
 .color-modal {
    color: black;
@@ -528,33 +422,19 @@ body#tinymce {
 
 }
 .boton-cal{
-   height: 2.5em;
+   height: 5.5em;
    display: inline-block;
-   width: 42%;
-   margin-left: 5%;
-   margin-top: 1em;
+   width: 52%;
+   /* margin-left: 5%; */
+   margin-top: 22em;
    background-color: #ffffff;
    font-size: 4vw;
    color: #035472;
+   margin-right: -1em;
+   
 }
 .display-inline{
 display: inline-block
-}
-.input-left{
-   width: 43%;
-   display: inline-block;
-   margin-right: 5%;
-   border-radius: 10px;
-   height: 2.5em;
-   padding-left: 2%;
-}
-.input-rigth{
-   width: 44%;
-    display: inline-block;
-    margin-left: 5%;
-    border-radius: 10px;
-    height: 2.5em;
-    padding-left: 2%;
 }
 .font-size{
    font-size: 3vw;
@@ -591,15 +471,8 @@ display: inline-block
    /* margin-bottom: 1em; */
    color: gray;
 }
-.acercando{
-   color: #404446;
-   font-size: 6vw;
-   margin: 0px;
-}
-.puerquito{
-   width: 16%;
-   margin-left: 43%;
-}
+
+
 .display-none{
    display: none
 }
@@ -615,52 +488,15 @@ display: inline-block
    margin-top: 5em;
 
 }
-@media screen and (min-width: 600px)  {
-.container-pub {
-      display: inline-block;
-      width: 45%;
-      margin-left:3%
-}
-.number-likes{
-   margin-left: 91%;
-  
-}
-
-}
-
-#directorio{
-   margin-top: 52px;
-   margin-bottom: 48px;
-   display: none;
-}
-
-.fixed-bottom {
-   position: fixed;
-   right: 0px;
-   bottom: 0;
-   left: 0px;
-   z-index: 1030;
-   background-color: #2ab4dc;
+.color-login-phone{
+   background-color: #3f3042;
+   margin-top: 1em;
+   border-radius: 10px;
+   width: 100%;
    text-align: center;
-   height: 51px;
+   margin-bottom: 1em;
+   
 }
 
-.nav__item{
-   color: white;
-       text-decoration: blink;
-       font-family: sans-serif;
-       padding: 10%;
-       font-size: 26px;
-       vertical-align: bottom;
- }
-
- .sin-hover:hover {
-   color: #9E9E9E;
- }
-
- .bienvenida-Afo{
-   font-size: 5vw;
-   color: #4AAF29;
-   width: 50%;}
 
    
