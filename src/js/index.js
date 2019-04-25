@@ -117,7 +117,7 @@ window.controlador = {
 
       if (user.emailVerified || providerId == "facebook.com") {
         window.location.hash = '#/wall';
-        //poniendolo antes de las variables y dentro del settimeout
+        
         setTimeout(function () {
           const signOut = document.getElementById("signOut")
           signOut.addEventListener("click", () => {
